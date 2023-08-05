@@ -1,0 +1,28 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #212529;
+}
+
+
+.MenuPnl{
+    display: flex;
+    position: absolute;
+    right: 0%;
+    width: 25vh;
+    height: 100vh;
+    background-color: #272B2F;
+}
+
+
+
+
+
+.UserPnl{
+    display: flex;
+    position: absolute;
+    left: 0%;
+    width: 35vh;
+    height: 100vh;
+    background-color: #272B2F;
+}
