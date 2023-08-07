@@ -31,10 +31,12 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: start;
-    padding-top:20vh ;
+    /* padding-top:20vh ; */
     background-color: #272B2F;
 }
 .flex-row{
+    position: relative;
+    top: 16vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
