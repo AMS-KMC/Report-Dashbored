@@ -81,7 +81,6 @@ body{
     display: grid;
     row-gap: 2vh;
     column-gap: 2vh;
-    justify-content:center;
 }
 .card{
     width: 27vh;
