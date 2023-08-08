@@ -42,6 +42,47 @@ body{
     top:16vh;
 }
 
+
+.flex-row-Auth1{
+    position: relative;
+    top: 16vh;
+    
+}
+
+
+.flex-row-Auth2{
+    position: relative;
+    top: 16vh;
+    
+}
+
+
+.flex-row-Auth3{
+    position: relative;
+    top: 16vh;
+    
+}
+
+
+.flex-row-Auth4{
+    position: relative;
+    top: 16vh;
+    
+}
+
+
+.flex-row-Auth5{
+    position: relative;
+    top: 16vh;
+    
+}
+
+
+.flex-row-Auth6{
+    position: relative;
+    top: 16vh;
+    
+}
 /* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 /* flex styles dynamik */
 
@@ -252,14 +293,6 @@ body{
 
 
 
-
-.svg-Auth-on{
-    opacity: 100%;
-    position: absolute;
-    left: 16vh;
-    bottom: auto;
-    scale: 120%;
-}
 
 
 
