@@ -357,7 +357,7 @@ body{
 .CardsSec{
     position: relative;
     width: 90%;
-    height: 40%;
+    height: auto;
     /* background-color: antiquewhite; */
     padding:2%;
     margin-top: 1rem;
@@ -377,7 +377,7 @@ body{
     /* grid-template-columns: repeat(4, 1fr); */
     padding: 1rem;
     /* background-color: #A6A7A9; */
-    width: 80vh;
+    width: auto;
     height: 30%;
     display: grid;
     row-gap: 2vh;
@@ -385,6 +385,8 @@ body{
     
 }
 .card{
+    display: inline-flex;
+    flex-direction: column;
     width: auto;
     height: 100%;
     border-radius: 0.875rem;
@@ -399,6 +401,7 @@ body{
     align-items: center;
 }
 .dataView p {
+    color: aliceblue;
     /* font-size: 3vw; */
 }
 .stutsView{
