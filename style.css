@@ -357,7 +357,7 @@ body{
 .CardsSec{
     position: relative;
     width: 90%;
-    height: auto;
+    height: 40%;
     /* background-color: antiquewhite; */
     padding:2%;
     margin-top: 1rem;
@@ -372,13 +372,13 @@ body{
     font-family: 'int-bold';
 }
 .cards{
-    align-self: center;
+    /* align-self: center; */
     grid-template-columns: auto auto auto auto;
     /* grid-template-columns: repeat(4, 1fr); */
     padding: 1rem;
     /* background-color: #A6A7A9; */
     width: auto;
-    height: 30%;
+    /* height: auto; */
     display: grid;
     row-gap: 2vh;
     column-gap: 2vh;
@@ -394,6 +394,7 @@ body{
     box-shadow: 0px 0px 0px 0px rgba(27, 28, 29, 0.10), 0px 4px 8px 0px rgba(27, 28, 29, 0.10), 0px 15px 15px 0px rgba(27, 28, 29, 0.09), 0px 34px 20px 0px rgba(27, 28, 29, 0.05), 0px 60px 24px 0px rgba(27, 28, 29, 0.01), 0px 94px 26px 0px rgba(27, 28, 29, 0.00);
 }
 .dataView{
+    flex-wrap: wrap;
     display: inline-flex;
     flex-direction: row;
     /* height: 35%; */
@@ -402,7 +403,10 @@ body{
 }
 .dataView p {
     color: aliceblue;
-    /* font-size: 3vw; */
+    font-size: 1.5vw;
+}
+.dataView span{
+    color: #5c6679;
 }
 .stutsView{
     display: flex;
