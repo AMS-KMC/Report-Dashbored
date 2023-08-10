@@ -351,3 +351,32 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
 }
+
+
+
+
+
+
+
+
+// --------------------------------------------------- main section ----------------------------------------------------------------------
+
+
+
+// const DataValues = document.querySelectorAll("#Data-Value");
+// DataValues.forEach( Data => {
+  
+// });
+
+
+// Get the element by its id, class, tag name or any valid CSS selector
+var DataValues = document.querySelector(".Data-Value");
+
+// Set the color property of the element to any valid CSS color value
+DataValues.style.color = "blue";
+
+// debugger;
+// var DataValue = document.getElementById("Data-Value");
+// console.log(DataValue.innerText);
+// console.log(DataValue.innerHTML());
+// alert(DataValue)

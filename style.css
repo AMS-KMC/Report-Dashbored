@@ -424,7 +424,9 @@ body{
     flex-wrap: wrap;
     align-items: center;
 }
-
+#Data-Value{
+    /* color: red; */
+}
 /*---------------------------------------------------------------User panel section-------------------------------------------------------------------*/
 .UserPnl{
     display: flex;
