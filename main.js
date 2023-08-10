@@ -45,6 +45,17 @@ function resumeHover(ids) {
       }
 
     }
+
+    else if (id == "AuthHome") {
+      
+      const element = document.getElementById(id);
+      if (element) {
+        element.setAttribute("onmouseover", "changeStyleAuth1()");
+        element.setAttribute("onmouseout", "resetStyleAuth1()");
+        resetStyleAuth1()
+      }
+
+    }
   });
 }
 
@@ -65,7 +76,7 @@ function IDgir(ids) {
 
 function removeTextFromList(textToRemove) {
   pauseHover(textToRemove);
-  const inputList = ["AuthHome", "HomeA"]; // لیست دستی
+  const inputList = ["AuthHome", "HomeA","Auth2","Auth3","Auth4","Auth5","Auth6"]; // لیست دستی
   const newList = [];
 
   for (let i = 0; i < inputList.length; i++) {
