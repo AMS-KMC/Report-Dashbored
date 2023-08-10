@@ -454,6 +454,8 @@ function resetStyleAuth6() {
   element4.classList.add("flex-base");
 }
 
+
+// --------------------------------------------------------------- side bar ------------------------------------------------------------
 // function resetStyle() {
 //   let element = document.querySelector(".svg-Auth-on");
 //   element.classList.remove("svg-Auth-on", "svg-base");

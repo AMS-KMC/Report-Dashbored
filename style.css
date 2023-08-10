@@ -332,6 +332,7 @@ body{
 .MainSec{
     display: flex;
     width: 100%;
+    flex-direction: column;
 }
 .CardsSec{
     position: relative;
@@ -399,8 +400,30 @@ body{
     flex-wrap: wrap;
     align-items: center;
 }
-#Data-Value{
-    /* color: red; */
+.Data-Value{
+    color: #F85149;
+}
+
+
+.tableSec{
+    position: relative;
+    width: 90%;
+    /* background-color: antiquewhite; */
+    padding:2%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-container {
+    display: table;
+  }
+.table-row-header {
+    display: table-row;
+}
+.table-headers{
+    display: table-cell;
 }
 /*---------------------------------------------------------------User panel section-------------------------------------------------------------------*/
 .UserPnl{
