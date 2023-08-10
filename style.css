@@ -10,6 +10,10 @@
     font-family: int-bold;
     src: url(references/fonts/iranintl-Bold.ttf);
 }
+@font-face {
+    font-family: yekan;
+    src: url(references/fonts/B-YEKAN.TTF);
+}
 
 *{
     font-family: 'int-medium';
@@ -85,19 +89,23 @@ body{
 }
 /* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 /* flex styles dynamik */
-
-/* flex 0n click  */
-.flex-on-clike{
+.ss{
     display: flex;
-    flex-direction: column;
+}
+/* flex 0n click  */
+.flex-on-click{
+    display: flex;
+    margin-bottom: 2.5vh;
+    border-radius: 18px;
+    background: #32363B;
     justify-content: center;
-    text-decoration-line: none;
     align-items: center;
-    background-color: lightblue;
+    font-size: 20px;
     width: 85%;
     height: 6%;
-    margin-bottom: 2.5vh;
-    /* border-radius: 28px; */
+    text-decoration: none;
+
+
     border-radius: 18px;
     background: #53EAFF;
     box-shadow: 0px 0px 17px 0px rgba(83, 234, 255, 0.30);
@@ -124,7 +132,7 @@ body{
     box-shadow: 0px 0px 17px 0px rgba(83, 234, 255, 0.30);
     color: #53EAFF;
     text-align: right;
-    font-family: iranintl-Bold;
+    font-family: 'int-bold';
     font-size: 20px;
     font-style: normal;
     font-weight: 800;
@@ -160,10 +168,12 @@ body{
     color: #2D3136;
     text-align: right;
     font-family: 'int-bold';
-    font-size: 19px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    position: relative;
+    bottom: 0vh;
 }
 
 .mtn-base{
@@ -171,14 +181,12 @@ body{
     color: rgba(255, 255, 255, 0.40);
     text-align: right;
     font-family: 'int-bold';
-    font-size: 20px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
     position: relative;
     bottom: 0vh;
-    width: auto;
-    height: auto;
+    
 }
 
 
@@ -210,16 +218,7 @@ body{
 .svg-base-off{
     display: none; 
 }
-.svg-Auth-base{
-    opacity: 100%;
-    position: absolute;
-    left: 16vh;
-    bottom: auto;
-    scale: 120%;
-}
-.svg-Auth-base-off{
-    display: none;
-}
+
 
 .svg-on-hover{
     opacity: 100%;
@@ -237,27 +236,17 @@ body{
 
 
 
-.svg-Auth-on-hover{
-    opacity: 100%;
+
+
+
+
+.svg-on-click{
     position: absolute;
     left: 16vh;
     bottom: auto;
     scale: 120%;
 }
-.svg-Auth-on-hover{
-    display: none;
-}
-
-
-
-
-.svg-base-on-click{
-    position: absolute;
-    left: 16vh;
-    bottom: auto;
-    scale: 120%;
-}
-.svg-base-on-click-off{
+.svg-on-click-off{
     display: none;
 }
 
@@ -265,18 +254,8 @@ body{
 
 
 
-.svg-Auth-on-click{
-    position: absolute;
-    left: 16vh;
-    bottom: auto;
-    scale: 120%;
-}
-.svg-Auth-on-click-off{
-    display: none;
-}
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, *//* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 
-
-/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 
 /* .mtn-home{
     position: relative;
@@ -372,34 +351,46 @@ body{
     font-family: 'int-bold';
 }
 .cards{
-    align-self: center;
+    /* align-self: center; */
     grid-template-columns: auto auto auto auto;
     /* grid-template-columns: repeat(4, 1fr); */
     padding: 1rem;
     /* background-color: #A6A7A9; */
-    width: 80vh;
-    height: 30%;
+    width: auto;
+    /* height: auto; */
     display: grid;
     row-gap: 2vh;
     column-gap: 2vh;
     
 }
 .card{
-    width: auto;
+    display: inline-flex;
+    flex-direction: column;
+    /* width: 30vh; */
     height: 100%;
     border-radius: 0.875rem;
     background: linear-gradient(135deg, #2D3136 0%, #2D323B 100%);
     box-shadow: 0px 0px 0px 0px rgba(27, 28, 29, 0.10), 0px 4px 8px 0px rgba(27, 28, 29, 0.10), 0px 15px 15px 0px rgba(27, 28, 29, 0.09), 0px 34px 20px 0px rgba(27, 28, 29, 0.05), 0px 60px 24px 0px rgba(27, 28, 29, 0.01), 0px 94px 26px 0px rgba(27, 28, 29, 0.00);
 }
 .dataView{
+    /* flex-wrap: wrap; */
     display: inline-flex;
     flex-direction: row;
     /* height: 35%; */
     justify-content: space-around;
     align-items: center;
 }
+.dataView img{
+    width: 25%;
+}
 .dataView p {
-    /* font-size: 3vw; */
+    font-family: 'yekan';
+    color: aliceblue;
+    font-size: 1.5vw;
+}
+.dataView span{
+    word-wrap:break-word;
+    color: #e0e0e0;
 }
 .stutsView{
     display: flex;
@@ -408,8 +399,9 @@ body{
     flex-wrap: wrap;
     align-items: center;
 }
-
-
+#Data-Value{
+    /* color: red; */
+}
 /*---------------------------------------------------------------User panel section-------------------------------------------------------------------*/
 .UserPnl{
     display: flex;
