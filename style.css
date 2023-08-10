@@ -89,19 +89,23 @@ body{
 }
 /* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 /* flex styles dynamik */
-
-/* flex 0n click  */
-.flex-on-clike{
+.ss{
     display: flex;
-    flex-direction: column;
+}
+/* flex 0n click  */
+.flex-on-click{
+    display: flex;
+    margin-bottom: 2.5vh;
+    border-radius: 18px;
+    background: #32363B;
     justify-content: center;
-    text-decoration-line: none;
     align-items: center;
-    background-color: lightblue;
+    font-size: 20px;
     width: 85%;
     height: 6%;
-    margin-bottom: 2.5vh;
-    /* border-radius: 28px; */
+    text-decoration: none;
+
+
     border-radius: 18px;
     background: #53EAFF;
     box-shadow: 0px 0px 17px 0px rgba(83, 234, 255, 0.30);
@@ -128,7 +132,7 @@ body{
     box-shadow: 0px 0px 17px 0px rgba(83, 234, 255, 0.30);
     color: #53EAFF;
     text-align: right;
-    font-family: iranintl-Bold;
+    font-family: 'int-bold';
     font-size: 20px;
     font-style: normal;
     font-weight: 800;
@@ -164,10 +168,12 @@ body{
     color: #2D3136;
     text-align: right;
     font-family: 'int-bold';
-    font-size: 19px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    position: relative;
+    bottom: 0vh;
 }
 
 .mtn-base{
@@ -175,14 +181,12 @@ body{
     color: rgba(255, 255, 255, 0.40);
     text-align: right;
     font-family: 'int-bold';
-    font-size: 20px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
     position: relative;
     bottom: 0vh;
-    width: auto;
-    height: auto;
+    
 }
 
 
@@ -214,16 +218,7 @@ body{
 .svg-base-off{
     display: none; 
 }
-.svg-Auth-base{
-    opacity: 100%;
-    position: absolute;
-    left: 16vh;
-    bottom: auto;
-    scale: 120%;
-}
-.svg-Auth-base-off{
-    display: none;
-}
+
 
 .svg-on-hover{
     opacity: 100%;
@@ -241,27 +236,17 @@ body{
 
 
 
-.svg-Auth-on-hover{
-    opacity: 100%;
+
+
+
+
+.svg-on-click{
     position: absolute;
     left: 16vh;
     bottom: auto;
     scale: 120%;
 }
-.svg-Auth-on-hover{
-    display: none;
-}
-
-
-
-
-.svg-base-on-click{
-    position: absolute;
-    left: 16vh;
-    bottom: auto;
-    scale: 120%;
-}
-.svg-base-on-click-off{
+.svg-on-click-off{
     display: none;
 }
 
@@ -269,18 +254,8 @@ body{
 
 
 
-.svg-Auth-on-click{
-    position: absolute;
-    left: 16vh;
-    bottom: auto;
-    scale: 120%;
-}
-.svg-Auth-on-click-off{
-    display: none;
-}
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, *//* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 
-
-/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 
 /* .mtn-home{
     position: relative;
