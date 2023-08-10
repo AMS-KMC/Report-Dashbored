@@ -1,5 +1,93 @@
-JavaScript
-// Home Function
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function pauseHover(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    element.removeAttribute("onmouseover");
+    element.removeAttribute("onmouseout");
+  }
+}
+function resumeHover(ids) {
+  ids.forEach(id => {
+
+
+    if (id == "HomeA") {
+
+      const element = document.getElementById(id);
+      if (element) {
+        element.setAttribute("onmouseover", "changeStyleHome()");
+        element.setAttribute("onmouseout", "resetStyleHome()");
+        resetStyleHome()
+      }
+        
+    }
+
+    else if (id == "AuthHome") {
+      
+      const element = document.getElementById(id);
+      if (element) {
+        element.setAttribute("onmouseover", "changeStyleAuth1()");
+        element.setAttribute("onmouseout", "resetStyleAuth1()");
+        resetStyleAuth1()
+      }
+
+    }
+
+    else if (id == "AuthHome") {
+      
+      const element = document.getElementById(id);
+      if (element) {
+        element.setAttribute("onmouseover", "changeStyleAuth1()");
+        element.setAttribute("onmouseout", "resetStyleAuth1()");
+        resetStyleAuth1()
+      }
+
+    }
+  });
+}
+
+
+
+// تابع اعمال تابع resumeHover بر روی آیتم‌های با آیدی‌های داده شده
+function IDgir(ids) {
+  
+  ids.forEach(id => {
+    const element = document.getElementById(id);
+    if (element) {
+      resumeHover(element);
+    }
+  });
+}
+
+
+
+function removeTextFromList(textToRemove) {
+  pauseHover(textToRemove);
+  const inputList = ["AuthHome", "HomeA"]; // لیست دستی
+  const newList = [];
+
+  for (let i = 0; i < inputList.length; i++) {
+    if (inputList[i] !== textToRemove) {
+      newList.push(inputList[i]);
+    }
+  }
+
+  resumeHover(newList);
+}
+
+
+// مثال استفاده از تاب
+ 
+// مثال اجرا
+
+
+
+
+ /////////////////////////////////////////////////////////////////////////////////////////////
+
+
 function changeStyleHome() {
   let element2 = document.querySelector(".flex-row .svg-base");
   element2.classList.remove("svg-base");
@@ -40,45 +128,36 @@ function resetStyleHome() {
 
 
 
+  
+  // onDissClickAuth();
+  
 
 
 
-// function changeStyleHome() {
-//   let element2 = document.querySelector(".flex-row .svg-base");
-//   element2.classList.remove("svg-base");
-//   element2.classList.add("svg-base-off");
 
 
-//   let element = document.querySelector(".flex-row .svg-on-hover-off");
-//   element.classList.remove("svg-on-hover-off");
-//   element.classList.add("svg-on-hover");
+// off onclick
 
 
-//   let element3 =  document.querySelector(".flex-row .mtn-base");
-//   element3.classList.remove("mtn-base");
-//   element3.classList.add("mtn-on-hover");
+// function onClickHomeOff() {
 
-
-//   let element4 =  document.querySelector(".flex-row");
-//   element4.classList.remove("flex-base");
-//   element4.classList.add("flex-on-hover");
-// }
-// function resetStyleHome() {
-//   let element2 = document.querySelector(".flex-row .svg-base-off");
+//   let element5 = document.querySelector(".MenuPnl .svg-on-click");
+//   element5.classList.remove("svg-on-click");
+//   element5.classList.add("svg-on-click-off");
+  
+//   let element2 = document.querySelector(".MenuPnl .svg-base-off");
 //   element2.classList.remove("svg-base-off");
 //   element2.classList.add("svg-base");
 
-//   let element = document.querySelector(".flex-row .svg-on-hover");
-//   element.classList.remove("svg-on-hover");
-//   element.classList.add("svg-on-hover-off");
 
-//   let element3 =  document.querySelector(".flex-row .mtn-on-hover");
-//   element3.classList.remove("mtn-on-hover");
-//   element3.classList.add("mtn-base");
+//   let element6 = document.querySelector(".MenuPnl .mtn-on-click");
+//   element6.classList.remove("mtn-on-click");
+//   element6.classList.add("mtn-base");
 
-//   let element4 =  document.querySelector(".flex-row");
-//   element4.classList.remove("flex-on-hover");
+//   let element4 =  document.querySelector(".MenuPnl");
+//   element4.classList.remove("flex-on-click");
 //   element4.classList.add("flex-base");
+
 // }
 
 
@@ -125,6 +204,46 @@ function resetStyleAuth1() {
   element4.classList.remove("flex-on-hover");
   element4.classList.add("flex-base");
 }
+
+
+
+
+
+
+
+
+
+
+
+// onclick Auth 1
+
+
+
+function onClickAuth1() {
+
+  onDissClickHome();
+ 
+  let element5 = document.getElementById("Auth1");
+  element5.removeAttribute("onmouseover");
+  element5.removeAttribute("onmouseout");
+
+  let element2 = document.querySelector(".flex-row-Auth1 .svg-on-hover");
+  element2.classList.remove("svg-on-hover");
+  element2.classList.add("svg-on-hover-off");
+
+  let element = document.querySelector(".flex-row-Auth1 .svg-on-click-off");
+  element.classList.remove("svg-on-click-off");
+  element.classList.add("svg-on-click");
+
+  let element3 =  document.querySelector(".flex-row-Auth1 .mtn-on-hover");
+  element3.classList.remove("mtn-on-hover");
+  element3.classList.add("mtn-on-click");
+
+  let element4 =  document.querySelector(".flex-row-Auth1");
+  element4.classList.remove("flex-on-hover");
+  element4.classList.add("flex-on-click");
+}
+
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Auth2%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
