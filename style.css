@@ -349,13 +349,13 @@ body{
 }
 .CardsSec{
     position: relative;
-    width: 90%;
-    height: 40%;
+    width: 60%;
+    height: 100%;
     /* background-color: antiquewhite; */
     padding:2%;
     margin-top: 1rem;
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
     display: flex;
     flex-direction: column;
 
@@ -366,7 +366,7 @@ body{
 }
 .cards{
     /* align-self: center; */
-    grid-template-columns: auto auto auto auto;
+    /* grid-template-columns: auto auto auto auto; */
     /* grid-template-columns: repeat(4, 1fr); */
     padding: 1rem;
     /* background-color: #A6A7A9; */
@@ -375,6 +375,9 @@ body{
     display: grid;
     row-gap: 2vh;
     column-gap: 2vh;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+
     
 }
 .card{
@@ -384,8 +387,18 @@ body{
     height: 100%;
     border-radius: 0.875rem;
     background: linear-gradient(135deg, #2D3136 0%, #2D323B 100%);
-    box-shadow: 0px 0px 0px 0px rgba(27, 28, 29, 0.10), 0px 4px 8px 0px rgba(27, 28, 29, 0.10), 0px 15px 15px 0px rgba(27, 28, 29, 0.09), 0px 34px 20px 0px rgba(27, 28, 29, 0.05), 0px 60px 24px 0px rgba(27, 28, 29, 0.01), 0px 94px 26px 0px rgba(27, 28, 29, 0.00);
+    box-shadow: 0px 0px 0px 0px rgba(27, 28, 29, 0.226), 0px 4px 8px 0px rgba(27, 28, 29, 0.10), 0px 15px 15px 0px rgba(27, 28, 29, 0.09), 0px 34px 20px 0px rgba(27, 28, 29, 0.05), 0px 60px 24px 0px rgba(27, 28, 29, 0.01), 0px 94px 26px 0px rgba(27, 28, 29, 0.00);
 }
+.BDkmc{ grid-area: 1 / 1 / 2 / 2;}
+.BDcrmn{ grid-area: 1 / 2 / 2 / 3;}
+.PSkmc{ grid-area: 2 / 1 / 3 / 2;}
+.PSmvm{ grid-area: 2 / 2 / 3 / 3;}
+.PSsipa{ grid-area: 2 / 3 / 3 / 4;}
+.TRMkmc{ grid-area: 3 / 1 / 4 / 2;}
+.TRMbmc{ grid-area: 3 / 2 / 4 / 3;}
+.PRKkmc{ grid-area: 4 / 1 / 5 / 2;}
+
+
 .dataView{
     /* flex-wrap: wrap; */
     display: inline-flex;
@@ -395,7 +408,7 @@ body{
     align-items: center;
 }
 .dataView img{
-    width: 25%;
+    width: 3.5vw;
 }
 .dataView p {
     font-family: 'yekan';
@@ -522,7 +535,7 @@ body{
 .sidebar {
     height: 100%;
     width: 0;
-    position: fixed;
+    position: relative;
     z-index: 1;
     top: 0;
     left: 0;
