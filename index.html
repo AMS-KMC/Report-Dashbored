@@ -5,6 +5,7 @@
     <title>Reporting Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+
 </head>
 <body>
      <!-- شایان این اون بخشی هست که منو ها دکمه های منو توش هست -->
@@ -466,41 +467,85 @@
         <div class="tableSec">
           <h3 class="SecTitle">جدول تولیدی</h3>
           <div class="table-container">
-            <div class="table-row-header">
-              <div class="table-headers">ردیف</div>
-              <div class="table-headers">شاسی</div>
-              <div class="table-headers">مدل</div>
-              <div class="table-headers">mainline</div>
-              <div class="table-headers">BIW</div>
-              <div class="table-headers">MetalFinish</div>
-              <div class="table-headers"></div>
-              <div class="table-headers">ok2</div>
-            </div>
-            <div class="table-row">
-              
-            </div>
-            <div class="table-row">
-              
-            </div>
-            <div class="table-row">
-              
-            </div>
-            <div class="table-row">
-              
-            </div>
-            <div class="table-row">
-              
-            </div>
-            <div class="table-row">
-              
-            </div>
-            <div class="table-row">
-              
-            </div>
+            <div class='mv_table'>
+              <div class='accordian_content'>
+      
+              </div>
+              <table id='simple_table'>
+                  <tr class="table-row-header">
+                      <th class="table-headers">ردیف         </th>
+                      <th class="table-headers">شاسی         </th>
+                      <th class="table-headers">مدل          </th>
+                      <th class="table-headers">mainline     </th>
+                      <th class="table-headers">enter BIW    </th>
+                      <th class="table-headers">BIW          </th>
+                      <th class="table-headers">MetalFinish  </th>
+                      <th class="table-headers">Enter Paint  </th>
+                      <th class="table-headers">Primer       </th>
+                      <th class="table-headers">Top Coat     </th>
+                      <th class="table-headers">Exit Paint   </th>
+                      <th class="table-headers">Enter Trim   </th>
+                      <th class="table-headers">Exit Chassis </th>
+                      <th class="table-headers">Final Trim   </th>
+                      <th class="table-headers">Exit Trim    </th>
+                    </tr>
+                    <tr>
+                      <td class="table-headers">1         </td>
+                      <td class="table-headers">NKA_D889270GJBID038</td>
+                      <td class="table-headers">784           </td>
+                      <td class="table-headers">1402/02/07    </td>
+                      <td class="table-headers">1402/02/07    </td>
+                      <td class="table-headers">1402/02/07    </td>
+                      <td class="table-headers">1402/02/07  </td>
+                      <td class="table-headers">1402/02/07  </td>
+                      <td class="table-headers">-       </td>
+                      <td class="table-headers">-    </td>
+                      <td class="table-headers">-   </td>
+                      <td class="table-headers">-  </td>
+                      <td class="table-headers">- </td>
+                      <td class="table-headers">-   </td>
+                      <td class="table-headers">-    </td>
+                    </tr>
+                    <tr>
+                      <td class="table-headers">2         </td>
+                      <td class="table-headers">NKA_D889270GJBID038</td>
+                      <td class="table-headers">784           </td>
+                      <td class="table-headers">1402/02/07    </td>
+                      <td class="table-headers">1402/02/07    </td>
+                      <td class="table-headers">1402/02/07    </td>
+                      <td class="table-headers">1402/02/07  </td>
+                      <td class="table-headers">1402/02/07  </td>
+                      <td class="table-headers">-       </td>
+                      <td class="table-headers">-    </td>
+                      <td class="table-headers">-   </td>
+                      <td class="table-headers">-  </td>
+                      <td class="table-headers">- </td>
+                      <td class="table-headers">-   </td>
+                      <td class="table-headers">-    </td>
+                    </tr>
+                    <tr>
+                      <td class="table-headers">3         </td>
+                      <td class="table-headers">NKA_D889270GJBID038</td>
+                      <td class="table-headers">784           </td>
+                      <td class="table-headers">1402/02/07    </td>
+                      <td class="table-headers">1402/02/07    </td>
+                      <td class="table-headers">1402/02/07    </td>
+                      <td class="table-headers">1402/02/07  </td>
+                      <td class="table-headers">1402/02/07  </td>
+                      <td class="table-headers">-       </td>
+                      <td class="table-headers">-    </td>
+                      <td class="table-headers">-   </td>
+                      <td class="table-headers">-  </td>
+                      <td class="table-headers">- </td>
+                      <td class="table-headers">-   </td>
+                      <td class="table-headers">-    </td>
+                    </tr>
+              </table>
+          </div>
             <!-- and so on -->
           </div>
         </div>
-
+        
         
         
 
@@ -510,8 +555,8 @@
 
 
     <!-- محمود این اون بخشی هست که قسمت اطلاعات یوزر توش هست -->
-    <section class="UserPnl" id="main">
-      <div id="mySidebar" class="sidebar">
+    <section class="UserPnl" id="main" id="mySidebar" class="sidebar">
+      <div >
           <div>
               <div>
                   <a href="#">اطلاعات کاربر</a>
