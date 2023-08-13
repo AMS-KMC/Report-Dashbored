@@ -368,7 +368,7 @@ body{
     /* align-self: center; */
     /* grid-template-columns: auto auto auto auto; */
     /* grid-template-columns: repeat(4, 1fr); */
-    padding: 1rem;
+    /* padding: 1rem; */
     /* background-color: #A6A7A9; */
     width: auto;
     /* height: auto; */
@@ -528,6 +528,96 @@ body{
     background-color: #272B2F;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+.UserPnlSec{
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    height: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* background-color: #818181; */
+}
+.UserinfoSec{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    /* background-color: #49686d; */
+}
+.userbtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.userbtns span {
+    color: white;
+    font-family: 'int-bold';
+    font-size: 1.1vw;
+    margin-left: 3rem;
+}
+.Userprofil{
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Userprofil > img{
+    margin-top: 3rem;
+    width: 35%;
+}
+.Userprofil > h2{
+    font-weight: normal;
+    color: white;
+    font-size: 1vw;
+    margin-top: 2rem;
+    padding: 0%;
+}
+.Userprofil > span{
+    color: #969696;
+    font-size: 0.9vw;
+}
+.ipcontainer{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    width: auto;
+    height: auto;
+    background-color: #53EAFF;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.6rem;
+}
+.UserinfoSec hr{
+    width: 100%;
+    border:0.1rem solid #41474F;
+}
+.NotifSec{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    /* background-color: #49686d; */
+}
+.navbarbtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.navbarbtns span {
+    color: white;
+    font-family: 'int-bold';
+    font-size: 1.1vw;
+    margin-left: 3rem;
+}
+.NotifSec hr{
+    margin-top: 10rem;
+    width: 100%;
+    border:0.1rem solid #41474F;
+}
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
