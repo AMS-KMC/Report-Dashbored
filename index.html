@@ -577,7 +577,7 @@
 
 
     <!-- محمود این اون بخشی هست که قسمت اطلاعات یوزر توش هست -->
-    <section class="UserPnl " id="main mySidebar">
+    <section class="UserPnl sidebar" id="mySidebar">
       <div class="UserPnlSec">
         <div class="UserinfoSec">
           <div class="userbtns">
@@ -605,17 +605,29 @@
             </dir>
           </div>
           <hr>
-          <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> -->
+          
       </div>  
       <div class="NotifSec">
         <div class="navbarbtns">
             <span> اطلاعیه ها</span>
-        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> -->
+       
         </div>  
         <hr>
       </div>
       <button class="openbtn" onclick="openNav()">x</button>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <script>
+        function openNav() {
+  document.getElementById("mySidebar").style.width = "300px";
+  document.getElementById("main").style.marginLeft = "300px";
+}
 
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+
+      </script>
   </section>
 </body>
 </html>
