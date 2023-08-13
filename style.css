@@ -657,7 +657,7 @@ body{
   }
   
   .openbtn {
-    position: absolute;
+    position: fixed;
     top: 300px;
     left: 0px;    
     font-size: 20px;
