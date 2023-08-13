@@ -132,7 +132,7 @@ body{
     margin-bottom: 2.5vh;
     border-radius: 18px;
     background: #32363B;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 20px;
     width: 85%;
@@ -163,7 +163,7 @@ body{
     margin-bottom: 2.5vh;
     border-radius: 18px;
     background: #32363B;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 20px;
     width: 85%;
@@ -224,9 +224,10 @@ body{
 .svg-base{
     opacity: 100%;
     position: absolute;
-    left: 16vh;
+    right: 16%;
     bottom: auto;
     scale: 120%;
+    
 }
 .svg-base-off{
     display: none; 
@@ -236,7 +237,7 @@ body{
 .svg-on-hover{
     opacity: 100%;
     position: absolute;
-    left: 16vh;
+    right: 16%;
     bottom: auto;
     scale: 120%;
 }
@@ -255,7 +256,7 @@ body{
 
 .svg-on-click{
     position: absolute;
-    left: 16vh;
+    right: 16%;
     bottom: auto;
     scale: 120%;
 }
@@ -631,8 +632,10 @@ body{
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+    transition: 0.5s ease;
+    width: 50vh;
+    height: 100vh;
+    background-color: #272B2F;
   }
   
   .sidebar a {

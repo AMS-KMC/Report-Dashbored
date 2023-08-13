@@ -548,7 +548,7 @@ function resetStyleAuth6() {
 
 
 // Get the element by its id, class, tag name or any valid CSS selector
-var DataValues = document.querySelector(".Data-Value");
+var DataValues = document.querySelector("Data-Value");
 
 // Set the color property of the element to any valid CSS color value
 DataValues.style.color = "blue";
