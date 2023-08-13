@@ -614,11 +614,12 @@
         </div>  
         <hr>
       </div>
-      <button class="openbtn" onclick="openNav()">x</button>
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <button class="openbtn" onclick="openNav()">&rarr;</button>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
       <script>
         function openNav() {
   document.getElementById("mySidebar").style.width = "300px";
+  document.getElementById("mySidebar").style.height = "900px";
   document.getElementById("main").style.marginLeft = "300px";
 }
 
