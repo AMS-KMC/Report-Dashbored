@@ -1,0 +1,56 @@
+<section class="UserPnl sidebar" id="mySidebar">
+    <div class="UserPnlSec">
+      <div class="UserinfoSec">
+        <div class="userbtns">
+            <span>اطلاعات کاربر</span>
+            <a href="#">
+              <img src="assets/Mahmoud-userpanel/email.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="assets/Mahmoud-userpanel/kmcWebsites.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="assets/Mahmoud-userpanel/edit.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="assets/Mahmoud-userpanel/login-svgrepo-com 2.svg" alt="">
+            </a>
+        </div>
+        <div class="Userprofil">
+          <img src="assets/Mahmoud-userpanel/user-female.svg" alt="">
+          <h2>تهمینه فرخ دوست</h2>
+          <span>سرپرست واحد سیستم ها</span>
+          <div class="ipcontainer">
+            <span><img src="assets/Mahmoud-userpanel/computer.svg" alt=""></span>
+            <span class="ipadres">192.168.4.51</span>
+          </div>
+        </div>
+        <hr>
+        
+    </div>  
+    <div class="NotifSec">
+      <div class="navbarbtns">
+          <span> اطلاعیه ها</span>
+     
+      </div>  
+      <hr>
+    </div>
+    <button class="openbtn" onclick="openNav()">⟪</button>
+    </div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">⟫</a>
+    <script>
+      function openNav() {
+        // document.getElementById("mysidebar").classList.add('UserPnl')
+      document.getElementById("mySidebar").style.width = "50vh";
+      document.getElementById("mySidebar").style.height = "100vh";
+      document.getElementsByClassName("openbtn").style.opacity = "0";
+      // document.getElementById("main").style.marginLeft = "300px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+
+    </script>
+</section>
