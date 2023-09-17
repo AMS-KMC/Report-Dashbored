@@ -323,7 +323,11 @@
 
     </section>
     <section class="UserPnl sidebar" id="mySidebar">
-      <!-- <div class="sidebar close"> -->
+      <div class="tabSec">
+        <button class="tablinks" onclick="openTab(event, 'filters')">فیلتر ها</button>
+        <button class="tablinks" onclick="openTab(event, 'userpnl')">پنل کاربری</button>
+      </div>
+      <div class="filtersSec tabcontent" id="filters">
         <div class="logo-details">
           <i class='bx bxl-c-plus-plus'></i>
           <span class="logo_name">فیلتر ها</span>
@@ -523,9 +527,73 @@
           </div>
           <i class='bx bx-log-out' ></i>
         </div>
-      </li>
-    </ul>
-      <!-- </div> -->
+          </li>
+        </ul>
+      </div>
+      <div class="UserPnlSec tabcontent" id="userpnl">
+        <div class="UserinfoSec">
+          <div class="userbtns">
+              <span>اطلاعات کاربر</span>
+              <a href="#">
+                <img src="assets/Mahmoud-userpanel/email.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="assets/Mahmoud-userpanel/kmcWebsites.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="assets/Mahmoud-userpanel/edit.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="assets/Mahmoud-userpanel/login-svgrepo-com 2.svg" alt="">
+              </a>
+          </div>
+          <div class="Userprofil">
+            <img src="assets/Mahmoud-userpanel/user-female.svg" alt="">
+            <h2>تهمینه فرخ دوست</h2>
+            <span>سرپرست واحد سیستم ها</span>
+            <div class="ipcontainer">
+              <span><img src="assets/Mahmoud-userpanel/computer.svg" alt=""></span>
+              <span class="ipadres">192.168.4.51</span>
+            </div>
+          </div>
+          <hr>
+          
+      </div>  
+      <div class="NotifSec">
+        <div class="navbarbtns">
+            <span> اطلاعیه ها</span>
+       
+        </div>  
+        <hr>
+      </div>
+      <!-- <button class="openbtn" onclick="openNav()">⟪</button> -->
+      </div>
+
+
+
+      <script>
+          function openTab(evt, tabname) {
+          // Declare all variables
+          var i, tabcontent, tablinks;
+                
+          // Get all elements with class="tabcontent" and hide them
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+        
+          // Get all elements with class="tablinks" and remove the class "active"
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+        
+          // Show the current tab, and add an "active" class to the button that opened the tab
+          document.getElementById(tabname).style.display = "block";
+          evt.currentTarget.className += " active";
+          }
+          
+      </script>
     </section>
 
 

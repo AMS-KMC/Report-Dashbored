@@ -1,18 +1,18 @@
 @font-face {
     font-family: int-medium;
-    src: url(references/fonts/iranintl-medium.ttf);
+    src: url('references/fonts/iranintl-medium.ttf');
 }
 @font-face {
     font-family: int-semi;
-    src: url(references/fonts/iranintl-semibold.ttf);
+    src: url('references/fonts/iranintl-semibold.ttf');
 }
 @font-face {
     font-family: int-bold;
-    src: url(references/fonts/iranintl-Bold.ttf);
+    src: url('references/fonts/iranintl-Bold.ttf');
 }
 @font-face {
     font-family: yekan;
-    src: url(references/fonts/B-YEKAN.TTF);
+    src: url('references/fonts/B-YEKAN.TTF');
 }
 
 body{
@@ -292,6 +292,7 @@ body{
 /*---------------------------------------------------------------User panel section-------------------------------------------------------------------*/
 .UserPnl{
     display: flex;
+    flex-direction: column;
     width: 50vh;
     height: 100vh;
     background-color: #FFFBEC;
@@ -306,6 +307,49 @@ body{
     /* background: #11101d; */
     z-index: 100;
     transition: all 0.5s ease;
+  }
+  .tabSec{
+    display: inline-flex;
+    flex-direction:row;
+    /* overflow: hidden; */
+  }
+  
+  /* Style the buttons inside the tab */
+  .tabSec button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tabSec button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tabSec button.active {
+    background-color: #ccc;
+  }
+  .tabcontent {
+    animation: fadeEffect 500ms; /* Fading effect takes 1 second */
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
   }
   .sidebar .nav-links{
     height: auto;
@@ -323,6 +367,99 @@ body{
   .sidebar .nav-links li:hover{
     background: #e7e2d2;
   }
+
+/* ---------------------------------------------------------------------------------------- userpanl --------------------------------------------------------------*/
+.UserPnlSec{
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    height: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* background-color: #818181; */
+}
+.UserinfoSec{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    /* background-color: #49686d; */
+}
+.userbtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.userbtns span {
+    color: #333333;
+    font-family: 'int-bold';
+    font-size: 1.1vw;
+    margin-left: 3rem;
+}
+.Userprofil{
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Userprofil > img{
+    margin-top: 3rem;
+    width: 35%;
+}
+.Userprofil > h2{
+    font-weight: normal;
+    color: #333333;
+    font-size: 1vw;
+    margin-top: 2rem;
+    padding: 0%;
+}
+.Userprofil > span{
+    color: #969696;
+    font-size: 0.9vw;
+}
+.ipcontainer{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    width: auto;
+    height: auto;
+    background-color: #53EAFF;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.6rem;
+}
+.UserinfoSec hr{
+    width: 100%;
+    border:0.1rem solid #41474F;
+}
+.NotifSec{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    /* background-color: #49686d; */
+}
+.navbarbtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.navbarbtns span {
+    color: #333333  ;
+    font-family: 'int-bold';
+    font-size: 1.1vw;
+    margin-left: 3rem;
+}
+.NotifSec hr{
+    margin-top: 10rem;
+    width: 100%;
+    border:0.1rem solid #41474F;
+}
+
 /* ******************************************* Responsive section *************************************************** */
 
 
