@@ -347,8 +347,8 @@ body{
   /* Style the tab content */
   .tabcontent {
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
+    /* padding: 6px 12px;
+    border: 1px solid #ccc; */
     border-top: none;
   }
   .sidebar .nav-links{
@@ -368,7 +368,8 @@ body{
     background: #e7e2d2;
   }
 
-/* ---------------------------------------------------------------------------------------- userpanl --------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------------- userpanel --------------------------------------------------------------*/
+
 .UserPnlSec{
     display:flex;
     flex-direction: column;
@@ -461,18 +462,20 @@ body{
 }
 
 /* 0000000000000000000000000000000000000000000000000000000000000000000000000000 test 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 */
-
-.sidebar .nav-links{
+.filtersSec{
     height: 100%;
-    padding: 30px 0 150px 0;
     overflow: auto;
+}
+.filtersSec::-webkit-scrollbar{
+    display: none;
+  }
+.sidebar .nav-links{
+    padding: 30px 0 150px 0;
   }
   .sidebar.close .nav-links{
     overflow: visible;
   }
-  .sidebar .nav-links::-webkit-scrollbar{
-    display: none;
-  }
+
   .sidebar .nav-links li{
     position: relative;
     list-style: none;
