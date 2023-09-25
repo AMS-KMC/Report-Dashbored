@@ -12,7 +12,7 @@
 <body>
      <!-- شایان این اون بخشی هست که منو ها دکمه های منو توش هست -->
     <section class="MenuPnl">
-      <img class="img-logo" src="/assets/shayan-menu/KMC logo.svg">
+      <img class="img-logo" src="assets/shayan-menu/KMC logo.svg">
 
             
 <!-- ##########################################*Home*######################################################### -->
@@ -331,18 +331,22 @@
         </div>
         <ul class="nav-links">
           <li>
-            <div href="#">
-              <i class='bx bx-grid-alt' ></i>
-              <span class="link_name">شماره شاسی</span>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-collection' ></i>
+                <span class="link_name">شماره شاسی</span>
+              </a>
               <span class="link_name_EN">VIN</span>
+              <i class='bx bxs-chevron-down arrow' ></i>
             </div>
-            <ul class="sub-menu blank">
+            <ul class="sub-menu">
               <li>
                 <form action="#">
                   <input type="text" name="" id="">
                 </form>
             </li>
             </ul>
+            <hr>
           </li>
           <li>
             <div class="iocn-link">
@@ -375,7 +379,9 @@
                   <option value="752N">مشکی متالیک</option>
                   <option value="742S">سفید متالیک</option>
                 </select></li>
+            
             </ul>
+            <hr>
           </li>
           <li>
             <div class="iocn-link">
@@ -392,34 +398,35 @@
                 <input type="text" name="bodyshop" id="datein" placeholder="روز / ماه / سال">
                 <span>تا</span>
                 <input type="text" name="bodyshop" id="dateout" placeholder="روز / ماه / سال">
-                <input type="checkbox" name="samedate" id="samedate">
-                <label for="samedate">همان روز</label>
+                <input type="checkbox" name="samedate" class="samedateinput" id="samedate">
+                <label for="samedate" class="samedate">همان روز</label>
               </li>
               <li>
                 <label for="paintshop">رنگ</label>
                 <input type="text" name="paintshop" id="datein" placeholder="روز / ماه / سال">
                 <span>تا</span>
                 <input type="text" name="paintshop" id="dateout" placeholder="روز / ماه / سال">
-                <input type="checkbox" name="samedate" id="samedate">
-                <label for="samedate">همان روز</label>
+                <input type="checkbox" name="samedate" class="samedateinput" id="samedate">
+                <label for="samedate" class="samedate">همان روز</label>
               </li>
               <li>
                 <label for="trimshop">مکانیکی</label>
                 <input type="text" name="trimshop" id="datein" placeholder="روز / ماه / سال">
                 <span>تا</span>
                 <input type="text" name="trimshop" id="dateout" placeholder="روز / ماه / سال">
-                <input type="checkbox" name="samedate" id="samedate">
-                <label for="samedate">همان روز</label>
+                <input type="checkbox" name="samedate" class="samedateinput" id="samedate">
+                <label for="samedate" class="samedate">همان روز</label>
               </li>
               <li>
                 <label for="pdi">تحویل</label>
                 <input type="text" name="pdi" id="datein" placeholder="روز / ماه / سال">
                 <span>تا</span>
                 <input type="text" name="pdi" id="dateout" placeholder="روز / ماه / سال">
-                <input type="checkbox" name="samedate" id="samedate">
-                <label for="samedate">همان روز</label>
+                <input type="checkbox" name="samedate" class="samedateinput" id="samedate">
+                <label for="samedate" class="samedate">همان روز</label>
               </li>
             </ul>
+            <hr>
           </li>
           <li>
             <div class="iocn-link">
@@ -436,10 +443,12 @@
                 <input type="text" name="Parking" id="datein" placeholder="روز / ماه / سال">
                 <span>تا</span>
                 <input type="text" name="Parking" id="dateout" placeholder="روز / ماه / سال">
-                <input type="checkbox" name="samedate" id="samedate">
-                <label for="samedate">همان روز</label>
+                <input type="checkbox" name="samedate" class="samedateinput" id="samedate">
+                <label for="samedate" class="samedate">همان روز</label>
+                
               </li>
             </ul>
+            <hr>
           </li>
           <li>
             <div class="iocn-link">
@@ -456,8 +465,8 @@
                 <input type="text" name="Delivered" id="datein" placeholder="روز / ماه / سال">
                 <span>تا</span>
                 <input type="text" name="Delivered" id="dateout" placeholder="روز / ماه / سال">
-                <input type="checkbox" name="samedate" id="samedate">
-                <label for="samedate">همان روز</label>
+                <input type="checkbox" name="samedate" class="samedateinput" id="samedate">
+                <label for="samedate" class="samedate">همان روز</label>
               </li>
               <li>
                 <label for="destenation">مقصد</label>
@@ -467,7 +476,8 @@
                   <option value="isfahan">اصفهان</option>
                 </select>
               </li>
-            </ul>
+            </ul> 
+            <hr>
           </li>
           <li>
             <div class="iocn-link">
@@ -481,6 +491,7 @@
             <ul class="sub-menu">
               <li><a class="link_name" href="#">Plugins</a></li>
             </ul>
+            <hr>
           </li>
           <li>
             <div class="iocn-link">
